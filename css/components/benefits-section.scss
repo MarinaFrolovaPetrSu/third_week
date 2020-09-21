@@ -1,0 +1,33 @@
+.benefits-section {
+  position: relative;
+  background: url("../img/icons/grey_leaf.png") left top 57% no-repeat;
+
+  @include tablets {
+    background-position: left top;
+  }
+
+  @include phones {
+    background: none;
+    min-height: initial;
+  }
+
+
+  &:after {
+    background-image: url("../img/icons/raspberry-and-bars.png");
+
+
+    @include phones {
+      display: none;
+    }
+  }
+}
+
+.benefit__bar {
+  width: 15%;
+  position: relative;
+  bottom: -10%;
+
+  @include phones {
+    display: none;
+  }
+}
